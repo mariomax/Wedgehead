@@ -71,4 +71,18 @@ h3 {
 
 p {
   line-height: 1.2;
+  padding: 1rem 0;
+}
+
+@media (min-width: 500px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 768px) {
+  .gallery {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
