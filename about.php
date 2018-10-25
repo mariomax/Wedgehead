@@ -5,7 +5,7 @@
     <img src="images/about-pic.jpg" alt="Wedgehead Pinball Arcade is Open" class="open">
   </div>
   <figure clas="owners">
-    <img src="images/rhodes-alan.jpeg" alt="Chris Rhodes and Alan Robertson of Wedgehead">
+    <img src="images/rhodes-alan.jpg" alt="Chris Rhodes and Alan Robertson of Wedgehead">
     <figcaption>Chris Rhodes (left) the Pinball Baron of St. John's.<br />Alan Robertson (right) Kitchen Boss Man &amp;
       Pinball Fiend.</figcaption>
   </figure>

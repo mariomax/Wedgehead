@@ -1,7 +1,7 @@
 <footer>
   <section class="credits">
     <div class="sub-credit">
-      <img src="images/wedgehead-logo-trans-white.png" alt="wedgehead logo">
+      <img src="images/wedgehead-trans-white.png" alt="wedgehead logo">
       <p>&copy; 2018 Wedgehead PDX</p>
     </div>
     <div class="sub-credit aa-credit">
