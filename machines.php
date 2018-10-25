@@ -1,5 +1,6 @@
 <section class="machines">
   <div class="machines-pic"></div>
+  <!-- <div style="height:700px;"> -->
   <h3>The Machines:</h3>
   <h4>Behold! The list of our current games...</h4>
   <div class="game-grid">
@@ -50,4 +51,7 @@
     </ul>
     <img src="images/iron-maiden-o.jpg" alt="Mystic pinball machine" class="game-o o-5">
   </div>
+  </div>
+  <div class="machines-pic bottom-parallax"></div>
+
 </section>

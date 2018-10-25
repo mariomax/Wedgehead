@@ -10,7 +10,9 @@ img {
   max-width: 50%;
   margin: 0 auto;
 }
-
+body, html {
+  height: 100%;
+}
 main {
   background-color: @dark;
   font-size: 16px;
@@ -125,10 +127,13 @@ main {
       padding-left: 1rem;
     }
     .machines-pic {
-      background: url(../images/play-here.jpg) center center;
+      background: url(../images/play-here.jpg) center;
       background-size: cover;
-      height: 250px;
+      height: 300px;
       max-width: 100%;
+    }
+    .bottom-parallax {
+      display: none;
     }
     ul {
       line-height: 2;
@@ -209,7 +214,7 @@ main {
       }
       a {
         display: block;
-        color: @white;
+        color: @light;
         font-family: 'Cabin Condensed', sans-serif;
         font-size: 1rem;
         padding: 0;
@@ -408,6 +413,24 @@ main {
 
 @media (min-width: 900px) {
   main {
+    .top {
+      background-attachment: fixed;
+      background-position: center -5rem;
+    }
+    .machines {
+      .machines-pic {
+        background-image: url(../images/play-here.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 300px;
+        max-width: 100%;
+      }
+      .bottom-parallax {
+        display: block;
+      }
+    }
     .about {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
