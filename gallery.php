@@ -47,9 +47,10 @@
       (max-width: 768px) 350px,
       500px"
       src="images/3-bumpers-700w.jpg" alt="pinball machine bumpers">
-  </div>
-  <div class="img-credits">
-    <a href="http://www.aaronleephotography.com/" title="Aaron Lee Photography" target="_blank" rel="nofollow noopener">Images
-      by Aaron Lee Photography &copy; 2018</a>
+      <img srcset="images/bar-image-350w.jpg 350w,
+      images/bar-image-700w.jpg 700w" sizes="(max-width: 500px) 400px,
+      (max-width: 768px) 350px,
+      500px"
+      src="images/bar-image-700w.jpg" alt="pinball machine bumpers" class="image-10">
   </div>
 </section>

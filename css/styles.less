@@ -14,7 +14,6 @@ img {
 main {
   background-color: @dark;
   font-size: 16px;
-  padding: 1rem;
   img {
     display: block;
     margin: 0 auto;
@@ -45,9 +44,10 @@ main {
   figure {
     figcaption {
       color: @white;
-      font-size: .8rem;
-      line-height: 1.1;
-      padding: .2rem 1rem;
+      font-size: .9rem;
+      line-height: 1.2;
+      padding: .2rem .5rem;
+      text-align: center;
     }
     img {
       display: block;
@@ -65,12 +65,12 @@ main {
     text-align: center;
   }
   h3 {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.2;
     padding: 1rem 0;
   }
   h4 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     padding: .5rem 0 1rem;
   }
   h5 {
@@ -85,15 +85,46 @@ main {
     line-height: 1.2;
     padding: 1rem 0;
   }
-
+  .top {
+    background: url(../images/game-hero.jpg) no-repeat center center;
+    background-size: cover;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 1rem 0 3rem;
+    img {
+      align-self: center;
+      max-width: 55%;
+    }
+  }
   .intro {
+    padding-top: 2rem;
+    text-align: center;
     h3,
     h4 {
       padding-left: 1rem;
       padding-right: 1rem;
     }
+    a.phone {
+      color: @white;
+      font-family: 'Oleo Script', cursive;
+      font-size: 1.3rem;
+      text-decoration: none;
+    }
   }
   .machines {
+    padding-top: 1rem;
+    h3,
+    h4 {
+      padding-left: 1rem;
+    }
+    .machines-pic {
+      background: url(../images/play-here.jpg) center center;
+      background-size: cover;
+      height: 250px;
+      max-width: 100%;
+    }
     ul {
       line-height: 2;
       text-align: center;
@@ -104,7 +135,7 @@ main {
           font-size: 1.2rem;
         }
         a:hover {
-          color: @blue;
+          color: @yellow;
         }
       }
     }
@@ -112,75 +143,300 @@ main {
       display: none;
     }
   }
+  .food {
+    h3,
+    h4 {
+      padding-left: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      padding: .5rem;
+      text-align: center;
+    }
+  }
+  .about {
+    h3 {
+      padding: 1rem;
+    }
+    p {
+      font-size: 1.1rem;
+      line-height: 1.2;
+      padding: .5rem 1rem;
+    }
+    .wedge-logo {
+      max-width: 50%;
+    }
+  }
   .gallery {
+    h3,
+    h4 {
+      padding-left: 1rem;
+    }
     .pictures {
       display: grid;
+      grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
-      padding-bottom: 1rem;
+      padding: 1rem .5rem;
       img {
         border-radius: 1rem;
       }
     }
-    .img-credits {
-      text-align: center;
+  }
+
+  .credits {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    margin: 0 auto;
+    .sub-credit {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 1rem;
+      img {
+        margin: 0 1rem 0 0;
+        padding: 0;
+        max-width: 2.5rem;
+      }
+      p {
+        padding: 0;
+      }
       a {
-        color: @purple;
+        display: block;
+        color: @white;
         font-family: 'Cabin Condensed', sans-serif;
-        font-size: .9rem;
-        padding: .5rem 0 1rem;
+        font-size: 1rem;
+        padding: 0;
+        text-decoration: none;
       }
     }
   }
 }
 
 @media (min-width: 375px) {
-  .machines {
-    .game-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      justify-content: center;
-      grid-row-gap: 2rem;
-      margin-top: 1rem;
-    }
-    img.game-o {
-      display: block;
-      border-radius: 100%;
-      align-self: center;
-      height: 140px;
-      width: 140px;
-      margin: 0 auto;
+  main {
+    .machines {
+      .game-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        grid-row-gap: 2rem;
+        margin-top: 1rem;
+        padding: 1rem;
+        .gl1,
+        .gl3,
+        .gl4 {
+          padding-left: .5rem;
+          text-align: left;
+        }
+        .gl2,
+        .gl5 {
+          padding-right: .5rem;
+          text-align: right;
+        }
+      }
+      img.game-o {
+        display: block;
+        border-radius: 100%;
+        border: .2rem solid @white;
+        align-self: center;
+        height: 150px;
+        width: 150px;
+        margin: 0 auto;
+      }
     }
   }
-  .pictures {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+
+@media (min-width: 425px) {
+  main {
+    .machines {
+      .game-grid {
+        img.game-o { 
+          height: 180px;
+          width: 180px;
+        }
+      }
+    }
+    .machines,
+    .food,
+    .gallery {
+      h3,
+      h4 {
+        padding-left: 2rem;
+      }
+      .pictures {
+        padding: 1rem;
+      }
+    }
+    .about {
+      p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 1rem 2rem;
+      }
+    }
   }
 }
 
 @media (min-width: 768px) {
-  .machines {
-    .game-grid {
-      grid-template-columns: repeat(5, 1fr);
-      .gl1 { order: 1; }
-      .gl2 { order: 3; }
-      .gl3 { order: 5; }
-      .gl4 { order: 7; }
-      .gl5 { order: 9; }
-      .o-1 { order: 2; }
-      .o-2 { order: 4; }
-      .o-3 { order: 6; }
-      .o-4 { order: 8; }
-      .o-5 { order: 10; }
+  main {
+    .machines {
+      h3 {
+        font-size: 2rem;
+        padding-left: 3rem;
+      }
+      h4 {
+        font-size: 1.8rem;
+        padding-left: 3rem;
+      }
+      .machines-pic {
+        background: url(../images/play-here.jpg) center -17rem;
+        height: 400px;
+      }
+      .game-grid {
+        grid-template-columns: repeat(5, 1fr);
+        .gl1 { 
+          order: 1;
+          text-align: center;
+        }
+        .gl2 {
+          order: 3;
+          text-align: center;
+        }
+        .gl3 {
+          order: 5;
+          text-align: center;
+        }
+        .gl4 {
+          order: 7;
+          text-align: center;
+        }
+        .gl5 {
+          order: 9;
+          text-align: center;
+        }
+        .o-1 { order: 2; }
+        .o-2 { order: 4; }
+        .o-3 { order: 6; }
+        .o-4 { order: 8; }
+        .o-5 { order: 10; }
+        img.game-o {
+          height: 120px;
+          width: 120px;
+        }
+      }
+    }
+    .food {
+      h3 {
+        font-size: 2rem;
+        padding-left: 3rem;
+      }
+      h4 {
+        font-size: 1.8rem;
+        padding-left: 3rem;
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 1rem 3rem;
+      }
+    }
+    .about {
+      h3 {
+        font-size: 2rem;
+        padding: 1.5rem 5rem;
+      }
+      figcaption {
+        font-size: 1.3rem;
+        padding: 1rem;
+      }
+      p {
+        font-size: 1.5rem;
+        padding: 1.5rem 3rem;
+      }
+    }
+    .gallery {
+      h3 {
+        font-size: 2rem;
+        padding-left: 3rem;
+      }
+      h4 {
+        font-size: 1.8rem;
+        padding-left: 3rem;
+      }
+      .pictures {
+        grid-gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 2rem;
+        .image-10 {
+          display: none;
+        }
+      }
+    }
+  }
+  .food {
+    .menu {
+      display: flex;
+      flex-direction: row;
+      img {
+        height: 100%;
+        width: 50%;
+      }
+    }
+  }
+  footer {
+    .credits {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: auto;
+      .sub-credit {
+        flex-direction: column;
+        justify-content: space-between;          
+        img {
+            max-width: 3.5rem;
+            padding-bottom: .8rem;
+          }
+      }
     }
   }
 }
 
 @media (min-width: 900px) {
-  .machines {
-    .game-grid {
-      img.game-o {
-        height: 150px;
-        width: 150px;
+  main {
+    .about {
+      figure {
+        figcaption {
+          font-size: 1rem;
+        }
+      }
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+      grid-template-areas:
+        "logo logo"
+        "title homies"
+        "p1 p2";
+        padding: 1rem 2rem;
+      .wedge-logo {
+        grid-area: logo;
+        max-width: 30%;
+        padding-bottom: 2rem;
+      }
+      .about-title {
+        grid-area: title;
+        padding: 0;
+      }
+      .owners {
+        grid-area: homies;
+      }
+      .p1 {
+        grid-area: p1;
+        font-size: 1.2rem;
+        padding: 1.5rem;
+      }
+      .p2 {
+        grid-area: p2;
+        font-size: 1.2rem;
+        padding: 1.5rem;
       }
     }
   }

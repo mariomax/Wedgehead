@@ -11,7 +11,6 @@ img {
 main {
   background-color: #212121;
   font-size: 16px;
-  padding: 1rem;
 }
 main img {
   display: block;
@@ -42,9 +41,10 @@ main section {
 }
 main figure figcaption {
   color: #FEFEFE;
-  font-size: .8rem;
-  line-height: 1.1;
-  padding: .2rem 1rem;
+  font-size: .9rem;
+  line-height: 1.2;
+  padding: .2rem .5rem;
+  text-align: center;
 }
 main figure img {
   display: block;
@@ -61,12 +61,12 @@ main h2 {
   text-align: center;
 }
 main h3 {
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   padding: 1rem 0;
 }
 main h4 {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
   padding: .5rem 0 1rem;
 }
 main h5 {
@@ -81,102 +81,324 @@ main p {
   line-height: 1.2;
   padding: 1rem 0;
 }
+main .top {
+  background: url(../images/game-hero.jpg) no-repeat center center;
+  background-size: cover;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  padding: 1rem 0 3rem;
+}
+main .top img {
+  align-self: center;
+  max-width: 55%;
+}
+main .intro {
+  padding-top: 2rem;
+  text-align: center;
+}
 main .intro h3,
 main .intro h4 {
   padding-left: 1rem;
   padding-right: 1rem;
+}
+main .intro a.phone {
+  color: #FEFEFE;
+  font-family: 'Oleo Script', cursive;
+  font-size: 1.3rem;
+  text-decoration: none;
+}
+main .machines {
+  padding-top: 1rem;
+}
+main .machines h3,
+main .machines h4 {
+  padding-left: 1rem;
+}
+main .machines .machines-pic {
+  background: url(../images/play-here.jpg) center center;
+  background-size: cover;
+  height: 250px;
+  max-width: 100%;
 }
 main .machines ul {
   line-height: 2;
   text-align: center;
 }
 main .machines ul li a {
-  color: #CA00E5;
+  color: #dc64f7;
   font-family: 'Cabin Condensed', sans-serif;
   font-size: 1.2rem;
 }
 main .machines ul li a:hover {
-  color: #1826F6;
+  color: #FFD602;
 }
 main .machines .game-o {
   display: none;
 }
+main .food h3,
+main .food h4 {
+  padding-left: 1rem;
+}
+main .food p {
+  font-size: 1.1rem;
+  padding: .5rem;
+  text-align: center;
+}
+main .about h3 {
+  padding: 1rem;
+}
+main .about p {
+  font-size: 1.1rem;
+  line-height: 1.2;
+  padding: .5rem 1rem;
+}
+main .about .wedge-logo {
+  max-width: 50%;
+}
+main .gallery h3,
+main .gallery h4 {
+  padding-left: 1rem;
+}
 main .gallery .pictures {
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  padding-bottom: 1rem;
+  padding: 1rem .5rem;
 }
 main .gallery .pictures img {
   border-radius: 1rem;
 }
-main .gallery .img-credits {
-  text-align: center;
+main .credits {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  margin: 0 auto;
 }
-main .gallery .img-credits a {
-  color: #CA00E5;
+main .credits .sub-credit {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+}
+main .credits .sub-credit img {
+  margin: 0 1rem 0 0;
+  padding: 0;
+  max-width: 2.5rem;
+}
+main .credits .sub-credit p {
+  padding: 0;
+}
+main .credits .sub-credit a {
+  display: block;
+  color: #FEFEFE;
   font-family: 'Cabin Condensed', sans-serif;
-  font-size: .9rem;
-  padding: .5rem 0 1rem;
+  font-size: 1rem;
+  padding: 0;
+  text-decoration: none;
 }
 @media (min-width: 375px) {
-  .machines .game-grid {
+  main .machines .game-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: center;
     grid-row-gap: 2rem;
     margin-top: 1rem;
+    padding: 1rem;
   }
-  .machines img.game-o {
+  main .machines .game-grid .gl1,
+  main .machines .game-grid .gl3,
+  main .machines .game-grid .gl4 {
+    padding-left: .5rem;
+    text-align: left;
+  }
+  main .machines .game-grid .gl2,
+  main .machines .game-grid .gl5 {
+    padding-right: .5rem;
+    text-align: right;
+  }
+  main .machines img.game-o {
     display: block;
     border-radius: 100%;
+    border: 0.2rem solid #FEFEFE;
     align-self: center;
-    height: 140px;
-    width: 140px;
+    height: 150px;
+    width: 150px;
     margin: 0 auto;
   }
-  .pictures {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+}
+@media (min-width: 425px) {
+  main .machines .game-grid img.game-o {
+    height: 180px;
+    width: 180px;
+  }
+  main .machines h3,
+  main .food h3,
+  main .gallery h3,
+  main .machines h4,
+  main .food h4,
+  main .gallery h4 {
+    padding-left: 2rem;
+  }
+  main .machines .pictures,
+  main .food .pictures,
+  main .gallery .pictures {
+    padding: 1rem;
+  }
+  main .about p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 1rem 2rem;
   }
 }
 @media (min-width: 768px) {
-  .machines .game-grid {
+  main .machines h3 {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  main .machines h4 {
+    font-size: 1.8rem;
+    padding-left: 3rem;
+  }
+  main .machines .machines-pic {
+    background: url(../images/play-here.jpg) center -17rem;
+    height: 400px;
+  }
+  main .machines .game-grid {
     grid-template-columns: repeat(5, 1fr);
   }
-  .machines .game-grid .gl1 {
+  main .machines .game-grid .gl1 {
     order: 1;
+    text-align: center;
   }
-  .machines .game-grid .gl2 {
+  main .machines .game-grid .gl2 {
     order: 3;
+    text-align: center;
   }
-  .machines .game-grid .gl3 {
+  main .machines .game-grid .gl3 {
     order: 5;
+    text-align: center;
   }
-  .machines .game-grid .gl4 {
+  main .machines .game-grid .gl4 {
     order: 7;
+    text-align: center;
   }
-  .machines .game-grid .gl5 {
+  main .machines .game-grid .gl5 {
     order: 9;
+    text-align: center;
   }
-  .machines .game-grid .o-1 {
+  main .machines .game-grid .o-1 {
     order: 2;
   }
-  .machines .game-grid .o-2 {
+  main .machines .game-grid .o-2 {
     order: 4;
   }
-  .machines .game-grid .o-3 {
+  main .machines .game-grid .o-3 {
     order: 6;
   }
-  .machines .game-grid .o-4 {
+  main .machines .game-grid .o-4 {
     order: 8;
   }
-  .machines .game-grid .o-5 {
+  main .machines .game-grid .o-5 {
     order: 10;
+  }
+  main .machines .game-grid img.game-o {
+    height: 120px;
+    width: 120px;
+  }
+  main .food h3 {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  main .food h4 {
+    font-size: 1.8rem;
+    padding-left: 3rem;
+  }
+  main .food p {
+    font-size: 1.5rem;
+    padding: 1rem 3rem;
+  }
+  main .about h3 {
+    font-size: 2rem;
+    padding: 1.5rem 5rem;
+  }
+  main .about figcaption {
+    font-size: 1.3rem;
+    padding: 1rem;
+  }
+  main .about p {
+    font-size: 1.5rem;
+    padding: 1.5rem 3rem;
+  }
+  main .gallery h3 {
+    font-size: 2rem;
+    padding-left: 3rem;
+  }
+  main .gallery h4 {
+    font-size: 1.8rem;
+    padding-left: 3rem;
+  }
+  main .gallery .pictures {
+    grid-gap: 2rem;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 2rem;
+  }
+  main .gallery .pictures .image-10 {
+    display: none;
+  }
+  .food .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  .food .menu img {
+    height: 100%;
+    width: 50%;
+  }
+  footer .credits {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+  }
+  footer .credits .sub-credit {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  footer .credits .sub-credit img {
+    max-width: 3.5rem;
+    padding-bottom: .8rem;
   }
 }
 @media (min-width: 900px) {
-  .machines .game-grid img.game-o {
-    height: 150px;
-    width: 150px;
+  main .about {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 2rem;
+    grid-template-areas: "logo logo" "title homies" "p1 p2";
+    padding: 1rem 2rem;
+  }
+  main .about figure figcaption {
+    font-size: 1rem;
+  }
+  main .about .wedge-logo {
+    grid-area: logo;
+    max-width: 30%;
+    padding-bottom: 2rem;
+  }
+  main .about .about-title {
+    grid-area: title;
+    padding: 0;
+  }
+  main .about .owners {
+    grid-area: homies;
+  }
+  main .about .p1 {
+    grid-area: p1;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+  }
+  main .about .p2 {
+    grid-area: p2;
+    font-size: 1.2rem;
+    padding: 1.5rem;
   }
 }

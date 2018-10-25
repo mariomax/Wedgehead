@@ -1,7 +1,6 @@
 <section class="food">
   <h3>The Food Menu:</h3>
   <h4>Bring your appetite!</h4>
-  <img src="images/burger.jpeg" alt="Wedgehead burger">
   <div class="menu">
     <img src="images/menu-top.jpg" alt="Wedgehead food menu">
     <img src="images/menu-bottom.jpg" alt="Wedgehead food menu">

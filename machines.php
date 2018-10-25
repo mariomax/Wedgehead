@@ -1,5 +1,5 @@
 <section class="machines">
-  <img src="images/pinball.jpeg" alt="pinball machines at Wedgehead PDX">
+  <div class="machines-pic"></div>
   <h3>The Machines:</h3>
   <h4>Behold! The list of our current games...</h4>
   <div class="game-grid">
