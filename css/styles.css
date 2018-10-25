@@ -386,7 +386,7 @@ main .credits .sub-credit a {
 @media (min-width: 900px) {
   main .top {
     background-attachment: fixed;
-    background-position: center -5rem;
+    background-position: center -15rem;
   }
   main .machines .machines-pic {
     background-image: url(../images/play-here.jpg);
