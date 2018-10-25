@@ -33,7 +33,6 @@
     <?php include 'gallery.php'; ?>
     <?php include 'footer.php'; ?>
   </main>
-  <footer></footer>
 </body>
 
 </html>

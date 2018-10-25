@@ -14,6 +14,8 @@ img {
 main {
   background-color: @dark;
   font-size: 16px;
+  max-width: 1200px;
+  margin: 0 auto;
   img {
     display: block;
     margin: 0 auto;
@@ -42,6 +44,9 @@ main {
     padding-bottom: 1.5rem;
   }
   figure {
+    img {
+      border-radius: 1rem;
+    }
     figcaption {
       color: @white;
       font-size: .9rem;
@@ -158,6 +163,7 @@ main {
     h3 {
       padding: 1rem;
     }
+    .open { display: none; }
     p {
       font-size: 1.1rem;
       line-height: 1.2;
@@ -403,19 +409,24 @@ main {
 @media (min-width: 900px) {
   main {
     .about {
-      figure {
-        figcaption {
-          font-size: 1rem;
-        }
-      }
       display: grid;
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 2rem;
+      grid-gap: 2rem;
+      align-items: center;
       grid-template-areas:
         "logo logo"
         "title homies"
         "p1 p2";
-        padding: 1rem 2rem;
+      padding: 1rem 2rem;
+      h3 {
+        padding: 0 .5rem 1.3rem;
+      }
+      figure {
+        figcaption {
+          font-size: 1rem;
+          padding-bottom: 0;
+        }
+      }
       .wedge-logo {
         grid-area: logo;
         max-width: 30%;
@@ -424,17 +435,25 @@ main {
       .about-title {
         grid-area: title;
         padding: 0;
+        img.open {
+          display: block;
+          border-radius: 1rem;
+          max-width: 75%;
+        }
       }
       .owners {
         grid-area: homies;
+        align-items: center;
       }
       .p1 {
         grid-area: p1;
+        align-self: flex-start;
         font-size: 1.2rem;
         padding: 1.5rem;
       }
       .p2 {
         grid-area: p2;
+        align-self: flex-start;
         font-size: 1.2rem;
         padding: 1.5rem;
       }

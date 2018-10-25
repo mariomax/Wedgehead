@@ -1,6 +1,9 @@
 <section class="about">
-    <img src="images/wedgehead-trans-gold.png" alt="wedgehead logo" class="wedge-logo">
-  <h3 class="about-title">The premier pinball arcade in Portland. Serving bad-ass bar food, stiff drinks and cold beer. Home to 25 rotating pins from all eras.</h3>
+  <img src="images/wedgehead-trans-gold.png" alt="wedgehead logo" class="wedge-logo">
+  <div class="about-title">
+    <h3>The premier pinball arcade in Portland. Serving bad-ass bar food, stiff drinks and cold beer. Home to 25 rotating pins from all eras.</h3>
+    <img src="images/about-pic.jpg" alt="Wedgehead Pinball Arcade is Open" class="open">
+  </div>
   <figure clas="owners">
     <img src="images/rhodes-alan.jpeg" alt="Chris Rhodes and Alan Robertson of Wedgehead">
     <figcaption>Chris Rhodes (left) the Pinball Baron of St. John's.<br />Alan Robertson (right) Kitchen Boss Man &amp;
