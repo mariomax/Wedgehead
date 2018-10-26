@@ -213,11 +213,18 @@ main .credits .sub-credit a {
   padding: 0;
   text-decoration: none;
 }
+main .credits .sub-credit a:hover {
+  color: #dc64f7;
+}
+main .credits .sub-credit .atd-credit {
+  text-align: center;
+  line-height: 1.3;
+}
 @media (min-width: 375px) {
   main .machines .game-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    justify-content: center;
+    justify-items: center;
     grid-row-gap: 2rem;
     margin-top: 1rem;
     padding: 1rem;
@@ -282,6 +289,7 @@ main .credits .sub-credit a {
   }
   main .machines .game-grid {
     grid-template-columns: repeat(5, 1fr);
+    padding: 1rem 1rem 2rem;
   }
   main .machines .game-grid .gl1 {
     order: 1;
@@ -332,7 +340,15 @@ main .credits .sub-credit a {
   }
   main .food p {
     font-size: 1.5rem;
-    padding: 1rem 3rem;
+    padding: 1rem 6rem;
+  }
+  main .food .menu {
+    display: flex;
+    flex-direction: row;
+  }
+  main .food .menu img {
+    height: 100%;
+    width: 50%;
   }
   main .about h3 {
     font-size: 2rem;
@@ -362,14 +378,6 @@ main .credits .sub-credit a {
   main .gallery .pictures .image-10 {
     display: none;
   }
-  .food .menu {
-    display: flex;
-    flex-direction: row;
-  }
-  .food .menu img {
-    height: 100%;
-    width: 50%;
-  }
   footer .credits {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
@@ -385,8 +393,28 @@ main .credits .sub-credit a {
 }
 @media (min-width: 900px) {
   main .top {
+    display: flex;
+    flex-direction: column-reverse;
     background-attachment: fixed;
     background-position: center -15rem;
+    padding: 1.5rem 0 3rem;
+  }
+  main .top h5 {
+    color: #dc64f7;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #161616;
+    font-size: 2.2rem;
+    font-weight: 900;
+    font-family: 'Oleo Script', cursive;
+  }
+  main .top img {
+    max-width: 35%;
+  }
+  main .intro {
+    padding-top: 1rem;
+  }
+  main .machines h3 {
+    padding-top: 3rem;
   }
   main .machines .machines-pic {
     background-image: url(../images/play-here.jpg);
@@ -399,6 +427,9 @@ main .credits .sub-credit a {
   }
   main .machines .bottom-parallax {
     display: block;
+  }
+  main .food h4 {
+    padding-bottom: 2rem;
   }
   main .about {
     display: grid;

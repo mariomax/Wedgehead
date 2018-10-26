@@ -219,6 +219,13 @@ main {
         font-size: 1rem;
         padding: 0;
         text-decoration: none;
+        &:hover {
+          color: @purple;
+        }
+      }
+      .atd-credit {
+        text-align: center;
+        line-height: 1.3;
       }
     }
   }
@@ -230,7 +237,7 @@ main {
       .game-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+        justify-items: center;
         grid-row-gap: 2rem;
         margin-top: 1rem;
         padding: 1rem;
@@ -307,6 +314,7 @@ main {
       }
       .game-grid {
         grid-template-columns: repeat(5, 1fr);
+        padding: 1rem 1rem 2rem;
         .gl1 { 
           order: 1;
           text-align: center;
@@ -349,7 +357,15 @@ main {
       }
       p {
         font-size: 1.5rem;
-        padding: 1rem 3rem;
+        padding: 1rem 6rem;
+      }
+      .menu {
+        display: flex;
+        flex-direction: row;
+        img {
+          height: 100%;
+          width: 50%;
+        }
       }
     }
     .about {
@@ -385,16 +401,6 @@ main {
       }
     }
   }
-  .food {
-    .menu {
-      display: flex;
-      flex-direction: row;
-      img {
-        height: 100%;
-        width: 50%;
-      }
-    }
-  }
   footer {
     .credits {
       grid-template-columns: repeat(3, 1fr);
@@ -414,10 +420,30 @@ main {
 @media (min-width: 900px) {
   main {
     .top {
+      display: flex;
+      flex-direction: column-reverse;
       background-attachment: fixed;
       background-position: center -15rem;
+      padding: 1.5rem 0 3rem;
+      h5 {
+        color: @purple;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: @dark;
+        font-size: 2.2rem;
+        font-weight: 900;
+        font-family: 'Oleo Script', cursive; 
+      }
+      img {
+        max-width: 35%;
+      }
+    }
+    .intro {
+      padding-top: 1rem;
     }
     .machines {
+      h3 {
+        padding-top: 3rem;
+      }
       .machines-pic {
         background-image: url(../images/play-here.jpg);
         background-attachment: fixed;
@@ -429,6 +455,11 @@ main {
       }
       .bottom-parallax {
         display: block;
+      }
+    }
+    .food {
+      h4 {
+        padding-bottom: 2rem;
       }
     }
     .about {
