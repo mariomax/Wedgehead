@@ -46,9 +46,6 @@ main {
     padding-bottom: 1.5rem;
   }
   figure {
-    img {
-      border-radius: 1rem;
-    }
     figcaption {
       color: @white;
       font-size: .9rem;
@@ -129,12 +126,16 @@ main {
     .machines-pic {
       background: url(../images/play-here.jpg) center;
       background-size: cover;
-      height: 300px;
-      max-width: 100%;
+      height: calc(100vw / 1.56);
+      width: 100%;
     }
-    .bottom-parallax {
-      display: none;
+    .street-pic {
+      background: url(../images/street-view.jpg) center;
+      background-size: cover;
+      height: calc(100vw / 1.56);
+      width: 100%;
     }
+
     ul {
       line-height: 2;
       text-align: center;
@@ -297,6 +298,18 @@ main {
   }
 }
 
+@media(min-width: 676px) {
+  main {
+    .about {
+      .owners {
+        img {
+          border-radius: 1rem;
+        }
+      }
+    }
+  }
+}
+
 @media (min-width: 768px) {
   main {
     .machines {
@@ -444,17 +457,20 @@ main {
       h3 {
         padding-top: 3rem;
       }
-      .machines-pic {
-        background-image: url(../images/play-here.jpg);
+      .machines-pic,
+      .street-pic {
         background-attachment: fixed;
         background-position: center;
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
-        height: 300px;
-        max-width: 100%;
+        height: 350px;
+        width: 100%;
       }
-      .bottom-parallax {
-        display: block;
+      .machine-pic {
+        background-image: url(../images/play-here.jpg);
+      }
+      .street-pic {
+        background-image: url(../images/street-view.jpg);
       }
     }
     .food {
@@ -483,7 +499,7 @@ main {
       }
       .wedge-logo {
         grid-area: logo;
-        max-width: 30%;
+        max-width: 40%;
         padding-bottom: 2rem;
       }
       .about-title {

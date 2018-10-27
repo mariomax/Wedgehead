@@ -12,12 +12,12 @@
   <meta property="og:title" content="3728 NE Sandy Blvd. PDX OR 97232 12pm-12am, 7 Days a Week (503) 477-7637">
   <meta property="og:description" content="KILLER FOOD, CHEAP BOOZE, PINBALL NIRVANA">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://www.anchortagdesign.com/wedgie/og-markup.jpg">
+  <meta property="og:image" content="https://www.wedgeheadpdx.com/og-markup.jpg">
   <meta property="og:locale" content="en_US">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Wedgehead">
   <meta name="twitter:description" content="3728 NE Sandy Blvd. PDX OR 97232 12pm-12am, 7 Days a Week (503) 477-7637">
-  <meta name="twitter:image" content="https://www.anchortagdesign.com/wedgie/images/og-markup.jpeg">
+  <meta name="twitter:image" content="https://www.wedgeheadpdx.com/og-markup.jpg">
   <meta name="twitter:image:alt" content="Wedgehead">
   <!-- Stylesheets in the css folder -->
   <link href="css/reset.css" rel="stylesheet" type="text/css">

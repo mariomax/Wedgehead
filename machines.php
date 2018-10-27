@@ -52,6 +52,6 @@
     <img src="images/iron-maiden-o.jpg" alt="Mystic pinball machine" class="game-o o-5">
   </div>
   </div>
-  <div class="machines-pic bottom-parallax"></div>
+  <div class="street-pic bottom-parallax"></div>
 
 </section>

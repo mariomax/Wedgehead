@@ -13,7 +13,7 @@ html {
   height: 100%;
 }
 main {
-  background-color: #161616;
+  background-color: #101010;
   font-size: 16px;
   max-width: 1200px;
   margin: 0 auto;
@@ -44,9 +44,6 @@ main textarea {
 }
 main section {
   padding-bottom: 1.5rem;
-}
-main figure img {
-  border-radius: 1rem;
 }
 main figure figcaption {
   color: #FEFEFE;
@@ -128,11 +125,14 @@ main .machines h4 {
 main .machines .machines-pic {
   background: url(../images/play-here.jpg) center;
   background-size: cover;
-  height: 300px;
-  max-width: 100%;
+  height: calc(64.1025641vw);
+  width: 100%;
 }
-main .machines .bottom-parallax {
-  display: none;
+main .machines .street-pic {
+  background: url(../images/street-view.jpg) center;
+  background-size: cover;
+  height: calc(64.1025641vw);
+  width: 100%;
 }
 main .machines ul {
   line-height: 2;
@@ -274,6 +274,11 @@ main .credits .sub-credit .atd-credit {
     padding: 1rem 2rem;
   }
 }
+@media (min-width: 676px) {
+  main .about .owners img {
+    border-radius: 1rem;
+  }
+}
 @media (min-width: 768px) {
   main .machines h3 {
     font-size: 2rem;
@@ -402,7 +407,7 @@ main .credits .sub-credit .atd-credit {
   main .top h5 {
     color: #dc64f7;
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #161616;
+    -webkit-text-stroke-color: #101010;
     font-size: 2.2rem;
     font-weight: 900;
     font-family: 'Oleo Script', cursive;
@@ -416,17 +421,20 @@ main .credits .sub-credit .atd-credit {
   main .machines h3 {
     padding-top: 3rem;
   }
-  main .machines .machines-pic {
-    background-image: url(../images/play-here.jpg);
+  main .machines .machines-pic,
+  main .machines .street-pic {
     background-attachment: fixed;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    height: 300px;
-    max-width: 100%;
+    height: 350px;
+    width: 100%;
   }
-  main .machines .bottom-parallax {
-    display: block;
+  main .machines .machine-pic {
+    background-image: url(../images/play-here.jpg);
+  }
+  main .machines .street-pic {
+    background-image: url(../images/street-view.jpg);
   }
   main .food h4 {
     padding-bottom: 2rem;
@@ -448,7 +456,7 @@ main .credits .sub-credit .atd-credit {
   }
   main .about .wedge-logo {
     grid-area: logo;
-    max-width: 30%;
+    max-width: 40%;
     padding-bottom: 2rem;
   }
   main .about .about-title {
