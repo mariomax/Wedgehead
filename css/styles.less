@@ -1,5 +1,5 @@
 @import "palette.less";
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600|Oleo+Script:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600,700|Oleo+Script:400,700');
 img {
   display: block;
   max-width: 100%;
@@ -50,7 +50,7 @@ main {
       color: @white;
       font-size: .9rem;
       line-height: 1.2;
-      padding: .2rem .5rem;
+      padding: .5rem 0;
       text-align: center;
     }
     img {
@@ -135,7 +135,6 @@ main {
       height: calc(100vw / 1.56);
       width: 100%;
     }
-
     ul {
       line-height: 2;
       text-align: center;
@@ -161,18 +160,23 @@ main {
     }
     p {
       font-size: 1.1rem;
-      padding: .5rem;
+      padding: .5rem 1rem 1rem;
       text-align: center;
+    }
+    .outside-pic {
+      background: url(../images/outside.jpg) center;
+      background-size: cover;
+      height: calc(100vw / 1.56);
+      width: 100%;
     }
   }
   .about {
     h3 {
       padding: 1rem;
     }
-    .open { display: none; }
     p {
-      font-size: 1.1rem;
-      line-height: 1.2;
+      font-size: 1.2rem;
+      line-height: 1.3;
       padding: .5rem 1rem;
     }
     .wedge-logo {
@@ -188,7 +192,7 @@ main {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 1rem;
-      padding: 1rem .5rem;
+      padding: 1rem;
       img {
         border-radius: 1rem;
       }
@@ -234,6 +238,15 @@ main {
 
 @media (min-width: 375px) {
   main {
+    h5 {
+      font-size: 1.1rem;
+    }
+    figure {
+      figcaption {
+        font-size: 1rem;
+        padding-top: .8rem;
+      }
+    }
     .machines {
       .game-grid {
         display: grid;
@@ -241,7 +254,7 @@ main {
         justify-items: center;
         grid-row-gap: 2rem;
         margin-top: 1rem;
-        padding: 1rem;
+        padding: 1rem 1rem 2rem;
         .gl1,
         .gl3,
         .gl4 {
@@ -304,6 +317,7 @@ main {
       .owners {
         img {
           border-radius: 1rem;
+          max-width: 80%;
         }
       }
     }
@@ -358,6 +372,11 @@ main {
           width: 120px;
         }
       }
+      .street-pic {
+        background: url(../images/street-view.jpg) center -1rem;
+        background-size: cover;
+        height: 400px;
+      }
     }
     .food {
       h3 {
@@ -379,6 +398,11 @@ main {
           height: 100%;
           width: 50%;
         }
+      }
+      .outside-pic {
+        background: url(../images/outside.jpg) center;
+        background-size: cover;
+        height: 400px;
       }
     }
     .about {
@@ -407,7 +431,7 @@ main {
       .pictures {
         grid-gap: 2rem;
         grid-template-columns: repeat(3, 1fr);
-        padding: 2rem;
+        padding: 2rem 3rem;
         .image-10 {
           display: none;
         }
@@ -432,19 +456,23 @@ main {
 
 @media (min-width: 900px) {
   main {
+    h1 {
+      padding-top: 1rem;
+    }
     .top {
       display: flex;
       flex-direction: column-reverse;
       background-attachment: fixed;
       background-position: center -15rem;
-      padding: 1.5rem 0 3rem;
+      padding: 2rem 0 3rem;
       h5 {
         color: @purple;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: @dark;
         font-size: 2.2rem;
-        font-weight: 900;
-        font-family: 'Oleo Script', cursive; 
+        font-style: normal;
+        font-weight: 700;
+        // font-family: 'Oleo Script', cursive; 
       }
       img {
         max-width: 35%;
@@ -477,12 +505,20 @@ main {
       h4 {
         padding-bottom: 2rem;
       }
+      .outside-pic {
+        background-image: url(../images/outside.jpg);
+        background-attachment: fixed;
+        background-position: center;
+        background-size: contain;
+        background-repeat: no-repeat;
+        height: 350px;
+        width: 100%;
+      }
     }
     .about {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       grid-gap: 2rem;
-      align-items: center;
       grid-template-areas:
         "logo logo"
         "title homies"
@@ -499,17 +535,12 @@ main {
       }
       .wedge-logo {
         grid-area: logo;
-        max-width: 40%;
+        max-width: 80%;
         padding-bottom: 2rem;
       }
       .about-title {
         grid-area: title;
         padding: 0;
-        img.open {
-          display: block;
-          border-radius: 1rem;
-          max-width: 75%;
-        }
       }
       .owners {
         grid-area: homies;

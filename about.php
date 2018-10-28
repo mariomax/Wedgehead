@@ -1,8 +1,8 @@
 <section class="about">
-  <img src="images/wedge-head-logo.png" alt="wedgehead logo" class="wedge-logo">
   <div class="about-title">
+    <img src="images/wedge-head-logo.png" alt="wedgehead logo" class="wedge-logo">
     <h3>The premier pinball arcade in Portland. Serving bad-ass bar food, stiff drinks and cold beer. Home to 25 rotating pins from all eras.</h3>
-    <img src="images/about-pic.jpg" alt="Wedgehead Pinball Arcade is Open" class="open">
+
   </div>
   <figure class="owners">
     <img src="images/rhodes-alan.jpg" alt="Chris Rhodes and Alan Robertson of Wedgehead">

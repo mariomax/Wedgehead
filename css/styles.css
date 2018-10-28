@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600|Oleo+Script:400,700');
+@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600,700|Oleo+Script:400,700');
 img {
   display: block;
   max-width: 100%;
@@ -49,7 +49,7 @@ main figure figcaption {
   color: #FEFEFE;
   font-size: .9rem;
   line-height: 1.2;
-  padding: .2rem .5rem;
+  padding: .5rem 0;
   text-align: center;
 }
 main figure img {
@@ -155,18 +155,21 @@ main .food h4 {
 }
 main .food p {
   font-size: 1.1rem;
-  padding: .5rem;
+  padding: .5rem 1rem 1rem;
   text-align: center;
+}
+main .food .outside-pic {
+  background: url(../images/outside.jpg) center;
+  background-size: cover;
+  height: calc(64.1025641vw);
+  width: 100%;
 }
 main .about h3 {
   padding: 1rem;
 }
-main .about .open {
-  display: none;
-}
 main .about p {
-  font-size: 1.1rem;
-  line-height: 1.2;
+  font-size: 1.2rem;
+  line-height: 1.3;
   padding: .5rem 1rem;
 }
 main .about .wedge-logo {
@@ -180,7 +183,7 @@ main .gallery .pictures {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 1rem;
-  padding: 1rem .5rem;
+  padding: 1rem;
 }
 main .gallery .pictures img {
   border-radius: 1rem;
@@ -221,13 +224,20 @@ main .credits .sub-credit .atd-credit {
   line-height: 1.3;
 }
 @media (min-width: 375px) {
+  main h5 {
+    font-size: 1.1rem;
+  }
+  main figure figcaption {
+    font-size: 1rem;
+    padding-top: .8rem;
+  }
   main .machines .game-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
     grid-row-gap: 2rem;
     margin-top: 1rem;
-    padding: 1rem;
+    padding: 1rem 1rem 2rem;
   }
   main .machines .game-grid .gl1,
   main .machines .game-grid .gl3,
@@ -277,6 +287,7 @@ main .credits .sub-credit .atd-credit {
 @media (min-width: 676px) {
   main .about .owners img {
     border-radius: 1rem;
+    max-width: 80%;
   }
 }
 @media (min-width: 768px) {
@@ -335,6 +346,11 @@ main .credits .sub-credit .atd-credit {
     height: 120px;
     width: 120px;
   }
+  main .machines .street-pic {
+    background: url(../images/street-view.jpg) center -1rem;
+    background-size: cover;
+    height: 400px;
+  }
   main .food h3 {
     font-size: 2rem;
     padding-left: 3rem;
@@ -354,6 +370,11 @@ main .credits .sub-credit .atd-credit {
   main .food .menu img {
     height: 100%;
     width: 50%;
+  }
+  main .food .outside-pic {
+    background: url(../images/outside.jpg) center;
+    background-size: cover;
+    height: 400px;
   }
   main .about h3 {
     font-size: 2rem;
@@ -378,7 +399,7 @@ main .credits .sub-credit .atd-credit {
   main .gallery .pictures {
     grid-gap: 2rem;
     grid-template-columns: repeat(3, 1fr);
-    padding: 2rem;
+    padding: 2rem 3rem;
   }
   main .gallery .pictures .image-10 {
     display: none;
@@ -397,20 +418,23 @@ main .credits .sub-credit .atd-credit {
   }
 }
 @media (min-width: 900px) {
+  main h1 {
+    padding-top: 1rem;
+  }
   main .top {
     display: flex;
     flex-direction: column-reverse;
     background-attachment: fixed;
     background-position: center -15rem;
-    padding: 1.5rem 0 3rem;
+    padding: 2rem 0 3rem;
   }
   main .top h5 {
     color: #dc64f7;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #101010;
     font-size: 2.2rem;
-    font-weight: 900;
-    font-family: 'Oleo Script', cursive;
+    font-style: normal;
+    font-weight: 700;
   }
   main .top img {
     max-width: 35%;
@@ -439,11 +463,19 @@ main .credits .sub-credit .atd-credit {
   main .food h4 {
     padding-bottom: 2rem;
   }
+  main .food .outside-pic {
+    background-image: url(../images/outside.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 350px;
+    width: 100%;
+  }
   main .about {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 2rem;
-    align-items: center;
     grid-template-areas: "logo logo" "title homies" "p1 p2";
     padding: 1rem 2rem;
   }
@@ -456,17 +488,12 @@ main .credits .sub-credit .atd-credit {
   }
   main .about .wedge-logo {
     grid-area: logo;
-    max-width: 40%;
+    max-width: 80%;
     padding-bottom: 2rem;
   }
   main .about .about-title {
     grid-area: title;
     padding: 0;
-  }
-  main .about .about-title img.open {
-    display: block;
-    border-radius: 1rem;
-    max-width: 75%;
   }
   main .about .owners {
     grid-area: homies;

@@ -1,0 +1,3 @@
+Sitemap: https://wedgeheadpdx.com/sitemap.xml
+User-agent: *
+Allow: /
