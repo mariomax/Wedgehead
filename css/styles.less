@@ -1,5 +1,5 @@
 @import "palette.less";
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600,700|Oleo+Script:400,700');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Cabin+Condensed:400,600|Oleo+Script:400,700');
 img {
   display: block;
   max-width: 100%;
@@ -30,9 +30,7 @@ main {
     font-family: 'Oleo Script', cursive;
     color: @yellow;
   }
-  h5,
   p,
-  blockquote,
   small,
   em,
   figcaption,
@@ -41,6 +39,10 @@ main {
   textarea {
     font-family: 'Cabin Condensed', sans-serif;
     color: @white;
+  }
+  h5,
+  blockquote {
+    font-family: 'Boogaloo', cursive;
   }
   section {
     padding-bottom: 1.5rem;
@@ -141,7 +143,8 @@ main {
       li {
         a {
           color: @purple;
-          font-family: 'Cabin Condensed', sans-serif;
+          // font-family: 'Cabin Condensed', sans-serif;
+          font-family: 'Boogaloo', cursive;
           font-size: 1.2rem;
         }
         a:hover {

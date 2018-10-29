@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin+Condensed:400,600,700|Oleo+Script:400,700');
+@import url('https://fonts.googleapis.com/css?family=Boogaloo|Cabin+Condensed:400,600|Oleo+Script:400,700');
 img {
   display: block;
   max-width: 100%;
@@ -30,9 +30,7 @@ main h6 {
   font-family: 'Oleo Script', cursive;
   color: #FFD602;
 }
-main h5,
 main p,
-main blockquote,
 main small,
 main em,
 main figcaption,
@@ -41,6 +39,10 @@ main input,
 main textarea {
   font-family: 'Cabin Condensed', sans-serif;
   color: #FEFEFE;
+}
+main h5,
+main blockquote {
+  font-family: 'Boogaloo', cursive;
 }
 main section {
   padding-bottom: 1.5rem;
@@ -140,7 +142,7 @@ main .machines ul {
 }
 main .machines ul li a {
   color: #dc64f7;
-  font-family: 'Cabin Condensed', sans-serif;
+  font-family: 'Boogaloo', cursive;
   font-size: 1.2rem;
 }
 main .machines ul li a:hover {
