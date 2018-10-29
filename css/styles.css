@@ -93,13 +93,18 @@ main .top {
   background: url(../images/game-hero.jpg) no-repeat center center;
   background-size: cover;
   display: grid;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 100%;
   padding: 1rem 0 3rem;
 }
 main .top img {
-  align-self: center;
+  -ms-flex-item-align: center;
+      align-self: center;
   max-width: 55%;
 }
 main .intro {
@@ -196,10 +201,19 @@ main .credits {
   margin: 0 auto;
 }
 main .credits .sub-credit {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-bottom: 1rem;
 }
 main .credits .sub-credit img {
@@ -256,7 +270,8 @@ main .credits .sub-credit .atd-credit {
     display: block;
     border-radius: 100%;
     border: 0.2rem solid #FEFEFE;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     height: 150px;
     width: 150px;
     margin: 0 auto;
@@ -310,39 +325,59 @@ main .credits .sub-credit .atd-credit {
     padding: 1rem 1rem 2rem;
   }
   main .machines .game-grid .gl1 {
-    order: 1;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
     text-align: center;
   }
   main .machines .game-grid .gl2 {
-    order: 3;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
     text-align: center;
   }
   main .machines .game-grid .gl3 {
-    order: 5;
+    -webkit-box-ordinal-group: 6;
+        -ms-flex-order: 5;
+            order: 5;
     text-align: center;
   }
   main .machines .game-grid .gl4 {
-    order: 7;
+    -webkit-box-ordinal-group: 8;
+        -ms-flex-order: 7;
+            order: 7;
     text-align: center;
   }
   main .machines .game-grid .gl5 {
-    order: 9;
+    -webkit-box-ordinal-group: 10;
+        -ms-flex-order: 9;
+            order: 9;
     text-align: center;
   }
   main .machines .game-grid .o-1 {
-    order: 2;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
   }
   main .machines .game-grid .o-2 {
-    order: 4;
+    -webkit-box-ordinal-group: 5;
+        -ms-flex-order: 4;
+            order: 4;
   }
   main .machines .game-grid .o-3 {
-    order: 6;
+    -webkit-box-ordinal-group: 7;
+        -ms-flex-order: 6;
+            order: 6;
   }
   main .machines .game-grid .o-4 {
-    order: 8;
+    -webkit-box-ordinal-group: 9;
+        -ms-flex-order: 8;
+            order: 8;
   }
   main .machines .game-grid .o-5 {
-    order: 10;
+    -webkit-box-ordinal-group: 11;
+        -ms-flex-order: 10;
+            order: 10;
   }
   main .machines .game-grid img.game-o {
     height: 120px;
@@ -366,8 +401,13 @@ main .credits .sub-credit .atd-credit {
     padding: 1rem 6rem;
   }
   main .food .menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   main .food .menu img {
     height: 100%;
@@ -411,8 +451,13 @@ main .credits .sub-credit .atd-credit {
     grid-template-rows: auto;
   }
   footer .credits .sub-credit {
-    flex-direction: column;
-    justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
   footer .credits .sub-credit img {
     max-width: 3.5rem;
@@ -424,8 +469,13 @@ main .credits .sub-credit .atd-credit {
     padding-top: 1rem;
   }
   main .top {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column-reverse;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
     background-attachment: fixed;
     background-position: center -15rem;
     padding: 2rem 0 3rem;
@@ -436,7 +486,6 @@ main .credits .sub-credit .atd-credit {
     -webkit-text-stroke-color: #101010;
     font-size: 2.2rem;
     font-style: normal;
-    font-weight: 700;
   }
   main .top img {
     max-width: 35%;
@@ -453,7 +502,7 @@ main .credits .sub-credit .atd-credit {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 380px;
     width: 100%;
   }
   main .machines .machine-pic {
@@ -471,7 +520,7 @@ main .credits .sub-credit .atd-credit {
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    height: 350px;
+    height: 380px;
     width: 100%;
   }
   main .about {
@@ -499,17 +548,21 @@ main .credits .sub-credit .atd-credit {
   }
   main .about .owners {
     grid-area: homies;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   main .about .p1 {
     grid-area: p1;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size: 1.2rem;
     padding: 1.5rem;
   }
   main .about .p2 {
     grid-area: p2;
-    align-self: flex-start;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
     font-size: 1.2rem;
     padding: 1.5rem;
   }
