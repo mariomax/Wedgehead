@@ -1,10 +1,12 @@
 <footer>
   <section class="credits">
-    <div class="sub-credit">
-      <img src="images/wedgehead-trans-white.png" alt="wedgehead logo">
+    <div class="top-credit">
+      <div class="wedge-credit">
+        <a href="#top"><img src="images/wedgehead-trans-white.png" alt="wedgehead logo"></a>
+        <a href="https://www.facebook.com/WedgeHeadPDX/" target="_blank" rel="nofollow noopener"><img src="images/yellow-facebook-icon.svg" alt="facebook link" title="facebook link" class="social-icon"></a>
+        <a href="https://www.instagram.com/wedgeheadpdx/" target="_blank" rel="nofollow noopener"><img src="images/yellow-insta-icon.svg" alt="instagram link" title="instagram link" class="social-icon"></a>      
+      </div>
       <p>&copy; 2018 Wedgehead PDX</p>
-      <a href="https://www.facebook.com/WedgeHeadPDX/" target="_blank" rel="nofollow noopener"><img src="images/facebook-icon.svg" alt="facebook link" title="facebook link" class="social-icon"></a>
-      <a href="https://www.instagram.com/wedgeheadpdx/" target="_blank" rel="nofollow noopener"><img src="images/insta-icon.svg" alt="instagram link" title="instagram link" class="social-icon"></a>      
     </div>
     <div class="sub-credit">
       <img src="images/aa.png" alt="Aaron Lee Photography">

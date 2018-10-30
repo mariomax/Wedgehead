@@ -1,4 +1,4 @@
-<section class="top">
+<section class="top" id="top">
   <h5>KILLER FOOD, CHEAP BOOZE, PINBALL NIRVANA</h5>
   <img src="images/wedgehead-trans-white.png" alt="Wedgehead PDX logo">
 </section>
