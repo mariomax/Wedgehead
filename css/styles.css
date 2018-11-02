@@ -209,7 +209,7 @@ main .credits .top-credit .wedge-credit {
   align-items: center;
 }
 main .credits .top-credit .wedge-credit img {
-  max-width: 2.5rem;
+  max-width: 3rem;
   height: 2.5rem;
   margin: 0 1rem;
 }
