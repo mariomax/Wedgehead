@@ -1,5 +1,9 @@
 @import "palette.less";
 @import url('https://fonts.googleapis.com/css?family=Boogaloo|Cabin+Condensed:400,600|Oleo+Script:400,700');
+
+html {
+  background-color: @dark;
+}
 img {
   display: block;
   max-width: 100%;
@@ -111,6 +115,13 @@ main {
     h4 {
       padding-left: 1rem;
       padding-right: 1rem;
+      a {
+        color: @purple;
+        line-height: 1.3;
+      }
+      a:hover {
+        color: @yellow;
+      }
     }
     a.phone {
       color: @white;
@@ -181,6 +192,14 @@ main {
       font-size: 1.2rem;
       line-height: 1.3;
       padding: .5rem 1rem;
+    }
+    #contact {
+      a {
+        color: @purple;
+      }
+      a:hover {
+        color: @yellow;
+      }
     }
     .wedge-logo {
       max-width: 50%;
