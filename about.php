@@ -30,5 +30,6 @@ while(x=eval(x));
 //-->
 //]]>
 </script>
-</span></p>
+<!-- End encrypted mailto: link -->
+  </span></p>
 </section>
