@@ -129,6 +129,13 @@ main {
       font-size: 1.3rem;
       text-decoration: none;
     }
+    .parking {
+      img,
+      figcaption {
+        max-width: 90%;
+        margin: 0 auto;
+      }
+    }
   }
   .machines {
     padding-top: 1rem;
@@ -370,6 +377,11 @@ main {
 
 @media (min-width: 768px) {
   main {
+    .intro {
+      padding-top: 2rem;
+      display: grid;
+      grid-template-columns: 40% 1fr;
+    }
     .machines {
       h3 {
         font-size: 2rem;
@@ -524,7 +536,13 @@ main {
       }
     }
     .intro {
-      padding-top: 1rem;
+      padding-top: 3rem;
+      .parking {
+        img,
+        figcaption {
+          max-width: 80%;
+        }
+      }
     }
     .machines {
       h3 {
@@ -613,6 +631,13 @@ main {
           }
         }
       }
+    }
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    .intro {
+      grid-template-columns: repeat(2, 1fr);
     }
   }
 }

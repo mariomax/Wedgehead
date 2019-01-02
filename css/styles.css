@@ -129,6 +129,11 @@ main .intro a.phone {
   font-size: 1.3rem;
   text-decoration: none;
 }
+main .intro .parking img,
+main .intro .parking figcaption {
+  max-width: 90%;
+  margin: 0 auto;
+}
 main .machines {
   padding-top: 1rem;
 }
@@ -333,6 +338,11 @@ main .credits .sub-credit .social-icon {
   }
 }
 @media (min-width: 768px) {
+  main .intro {
+    padding-top: 2rem;
+    display: grid;
+    grid-template-columns: 40% 1fr;
+  }
   main .machines h3 {
     font-size: 2rem;
     padding-left: 3rem;
@@ -485,7 +495,11 @@ main .credits .sub-credit .social-icon {
     max-width: 35%;
   }
   main .intro {
-    padding-top: 1rem;
+    padding-top: 3rem;
+  }
+  main .intro .parking img,
+  main .intro .parking figcaption {
+    max-width: 80%;
   }
   main .machines h3 {
     padding-top: 3rem;
@@ -561,5 +575,10 @@ main .credits .sub-credit .social-icon {
   }
   main .credits .top-credit .wedge-credit img {
     margin: 0 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  main .intro {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
